@@ -6,3 +6,4 @@
 # replace pipeline-pipeline-multibranch-defaults plugin with our common-workflow plugin
 rm -rf $JENKINS_HOME/plugins/pipeline-multibranch-defaults*
 cp /usr/share/jenkins/ref/common-workflow.hpi $JENKINS_HOME/plugins
+cp /usr/share/jenkins/ref/jte.hpi $JENKINS_HOME/plugins
