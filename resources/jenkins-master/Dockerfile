@@ -34,7 +34,6 @@ COPY resources/scripts/sdp_entrypoint.groovy /usr/share/jenkins/ref/sdp_entrypoi
 
 # copy in custom plugins
 COPY resources/plugins/common-workflow.hpi /usr/share/jenkins/ref
-RUN rm /usr/share/jenkins/ref/jte.hpi
 COPY resources/plugins/jte.hpi /usr/share/jenkins/ref
 
 # copy in entry point scripts
