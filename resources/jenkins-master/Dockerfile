@@ -32,8 +32,9 @@ RUN chmod 777 /var/jenkins_home/init.groovy.d/*
 # insert SDP entrypiont
 COPY resources/scripts/sdp_entrypoint.groovy /usr/share/jenkins/ref/sdp_entrypoint.groovy
 
-# copy in custom common-workflow plugin
+# copy in custom plugins
 COPY resources/plugins/common-workflow.hpi /usr/share/jenkins/ref
+COPY resources/plugins/jte.hpi /usr/share/jenkins/ref
 
 # copy in entry point scripts
 COPY resources/scripts/jenkins-preboot.sh /usr/local/bin/jenkins_preboot
